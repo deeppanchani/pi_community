@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #202020;
+    top: 0;
+    width: 100%;
+    font-size: 25px;
+    height: 60px;
+    text-align:center;
+}
+  
+li {
+    float: left;
+    padding: 15px 30px;
+}
+  
+li a {
+    display: block;
+    color: #FFD100;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #202020;
+    text-decoration: underline;
+}
+
+.active {
+    text-decoration: underline;
+}
