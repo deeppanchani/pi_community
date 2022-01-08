@@ -4,6 +4,7 @@ body {
     font-family: 'Lato', sans-serif;
     width: 100%;
 }
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -31,7 +32,7 @@ li a {
 }
 
 li a:hover:not(.active) {
-    background-color: #202020;
+    background-color: #333533;
     text-decoration: underline;
 }
 
@@ -87,7 +88,7 @@ li a:hover:not(.active) {
 }
 
 .content a:hover{
-    color: #e9dd58;
+    color: #FFEE32;
 }
 
 .heading3 {
@@ -148,3 +149,74 @@ li a:hover:not(.active) {
     padding-top: 5px;
     text-align:center;
 }
+
+.blog-post {
+    margin: 0;
+    padding: 50px 250px;
+    background-color: #F7F7F7;
+}
+
+.blog-image {
+    text-align: center;
+}
+
+.blog-body {
+    color: #202020;
+    margin: 70px auto;
+    padding: 0 26.6px;
+}
+
+.blog-h {
+    font-size: 40px;
+}
+
+.blog-info {
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.blog-auth {
+    font-size: 20px;
+    display: flex;
+}
+
+.auth {
+    padding: 15px;
+}
+
+.blog-content {
+    font-size: 25px;
+}
+
+.blog-h1 {
+    font-size: 40px;
+    padding: 0 26.6px;
+}
+
+.blog-recommendation {
+    color: #202020;
+    margin: 30px auto;
+    padding: 0 26.6px;
+    display: flex;
+}
+
+.blog-small {
+    margin: auto;
+}
+
+.blog-h2 {
+    font-size: 30px;
+}
+
+.blog-h2 a {
+    color: #202020;
+}
+
+.blog-h2 a:visited {
+    color: #202020;
+}
+
+.blog-h2 a:hover {
+    color: #056BF1;
+}
+
