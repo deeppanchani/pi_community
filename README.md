@@ -13,7 +13,7 @@ So we have deciede to include the following pages.
 - [ ] Dashboard(Profile) Page
 - [ ] Edit Profile Page
 - [ ] Team Page
-- [ ] About Us Page
+- [x] Group Page
 - [ ] Blogs Page
 - [ ] Individual Blog Page
 - [ ] Write a Blog Page
