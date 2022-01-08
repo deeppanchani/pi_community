@@ -50,3 +50,48 @@ li a:hover:not(.active) {
 .footer div img {
     padding: 10px;
 }
+
+.content {
+    margin: 0;
+    padding: 30px 200px;
+    background-color: #202020;
+    color: #FFD100;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.project-card {
+    width: 450px;
+    margin: auto;
+}
+
+.project-card>p {
+    color: #F7F7F7;
+}
+
+.contributors {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+}
+
+.contributors-card {
+    margin: 30px auto;
+    padding: auto;
+}
+
+.contributors-card a{
+    font-size: 25px;
+    padding: auto;
+    color: #FFD100;
+    display: flex;
+}
+
+.contributors-card p{
+    padding-left: 20px;
+    padding-top: 5px;
+    text-align:center;
+}
