@@ -220,3 +220,112 @@ li a:hover:not(.active) {
     color: #056BF1;
 }
 
+.blog {
+    margin: 0;
+    padding: 30px 250px;
+    background-color: #F7F7F7;
+}
+
+.explore {
+    margin: 40px auto;
+    display: flex;
+    font-size: 25px;
+    padding-left: 234.5px;
+}
+
+.search {
+    display: flex;
+    background-color: #D6D6D6;
+    border-radius: 36.5px;
+    height: 40px;
+}
+
+.search-bar {
+    background-color: #D6D6D6;
+    border-width: 0px;
+    height: 38px;
+    width: 300px;
+    border-radius: 36.5px;
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+.search-bar:focus {
+    outline: none;
+}
+
+.search-button {
+    background-color: #333533;
+    border-radius: 36.5px;
+    border-width: 0px;
+    width: 45px;
+    height: 40px;
+}
+
+.search-button img {
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+.drop-down {
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+    background-color: #D6D6D6;
+    outline: none;
+    border:none;
+    border-left: 1px solid #202020;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.blog-listing {
+    display:flex; 
+    margin: 10px 0px; 
+    padding: 5px;
+}
+
+.date {
+    min-width: 250px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.info {
+    min-width: 700px;
+}
+
+.b-head {
+    font-size: 30px;
+}
+
+.b-head a {
+    color:#202020;
+}
+
+.b-head a:visited {
+    color:#202020;
+}
+
+.b-head a:hover {
+    color:#056BF1;
+}
+
+.b-info {
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.b-peek {
+    font-size: 20px;
+    margin: 5px 0px;
+}
+
+.b-profile {
+    display: flex;
+    margin: 15px 0px;
+}
+
+.b-auth {
+    padding: 15px;
+}
