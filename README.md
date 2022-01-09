@@ -16,7 +16,7 @@ So we have deciede to include the following pages.
 - [x] Group Page
 - [x] Blogs Page
 - [x] Individual Blog Page
-- [ ] Write a Blog Page
+- [x] Write a Blog Page
 
 And many other pages...
 

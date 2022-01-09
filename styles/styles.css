@@ -329,3 +329,48 @@ li a:hover:not(.active) {
 .b-auth {
     padding: 15px;
 }
+
+.b-write {
+    margin: 0;
+    padding: 30px 250px;
+    background-color: #F7F7F7;
+}
+
+.b-form {
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.b-heading {
+    width: 966px;
+    height: 50px;
+    font-size: 20px;   
+    resize: none;   
+    font-family: 'Lato', sans-serif;
+    margin: 15px 0px;
+}
+
+.b-cont {
+    width: 966px;
+    height: 500px;
+    font-size: 20px;   
+    resize: none;   
+    font-family: 'Lato', sans-serif;
+    margin: 15px 0px;
+}
+
+.btn-submit {
+    width: 120px;
+    background: #FFD100;
+    color: #202020;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    margin: 20px 0px;
+    padding: 10px 0px;
+}
+
+.btn-black {
+    font-size: 15px;
+}

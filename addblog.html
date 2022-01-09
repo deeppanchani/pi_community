@@ -36,9 +36,29 @@
     <!--End of Nav Bar Section-->
     
     <!--Start of Form Section-->
-    <section>
-        <form action="" method="post">
-
+    <section class="b-write">
+        <div class="heading">Write a <span class="thin">Blog</span></div>
+        <form class="b-form" action="" method="get">   
+            <label for="heading">Heading</label>
+            <br>
+            <textarea class="b-heading" name="heading"></textarea>
+            <br>
+            
+            <label for="tags">Tags</label>
+            <br>
+            <textarea class="b-heading" name="tags"></textarea>
+            <br>
+            
+            <label for="content">Content</label>
+            <br>
+            <textarea class="b-cont" name="content"></textarea>
+            <br>
+            
+            <label for="img">Upload a Banner Image</label>
+            <input class="btn-black" type="file" id="img" name="img" accept="image/*">
+            <br>
+            
+            <button class="btn-submit" type="submit" value="Submit">Submit</button>
         </form>
     </section>
     <!--End of Form Section-->
