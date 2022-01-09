@@ -12,7 +12,7 @@ So we have deciede to include the following pages.
 - [ ] Log In Page
 - [ ] Dashboard(Profile) Page
 - [ ] Edit Profile Page
-- [ ] Team Page
+- [x] Team Page
 - [x] Group Page
 - [x] Blogs Page
 - [x] Individual Blog Page

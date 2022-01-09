@@ -374,3 +374,77 @@ li a:hover:not(.active) {
 .btn-black {
     font-size: 15px;
 }
+
+.team {
+    margin: 0;
+    background-color: #202020;
+}
+
+.land-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.team-h {
+    font-size: 60px;
+    color: #FFD100;
+}
+.team-h1     {
+    font-size: 30px;
+    color: #FFD100;
+}
+
+.center {
+    padding-top: 240px;
+}
+
+.member {
+    display:grid;
+    grid-template-columns: auto auto;
+    width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #202020;
+}
+
+.member-card {
+    margin: 20px auto;
+    background-color: #333533;
+    border-radius: 10px;
+    width: 400px;
+    min-height: 200px;
+    display:flex;
+    color:#FFD100;
+}
+
+.member-img {
+    max-width: 200px;
+    padding: 25px 25px 25px 25px;
+}
+
+.member-info-wrap {
+    max-width: 200px;
+    min-width: 200px;
+    padding: 35px 0;
+}
+
+.member-name {
+    font-size: 30px;
+}
+
+.member-field {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.social-links {
+    display:flex;
+    margin-left: -12.5px;
+}
+
+
+.social-links img {
+    margin: auto 12.5px;
+}
