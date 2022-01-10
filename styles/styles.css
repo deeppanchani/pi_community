@@ -448,3 +448,15 @@ li a:hover:not(.active) {
 .social-links img {
     margin: auto 12.5px;
 }
+
+.landing {
+    position: relative;
+    height: 700px;
+    overflow: hidden;
+    background-image: url('/images/hero_img.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #FFD100;
+    text-align: center;
+}

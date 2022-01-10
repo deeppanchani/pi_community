@@ -8,9 +8,9 @@ Make a website with 10 web pages.
 
 So we have deciede to include the following pages.
 - [ ] Home Page
-- [ ] Sign Up Page
-- [ ] Log In Page
-- [ ] Dashboard(Profile) Page
+- [x] Sign Up Page
+- [x] Sign In Page
+- [x] Dashboard(Profile) Page
 - [ ] Edit Profile Page
 - [x] Team Page
 - [x] Group Page
