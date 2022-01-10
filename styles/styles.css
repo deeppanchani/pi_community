@@ -604,12 +604,142 @@ form input{
 
 .landing {
     position: relative;
-    height: 700px;
+    height: 675px;
     overflow: hidden;
-    background-image: url('/images/hero_img.png');
+    background-image: url('../images/hero_img.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     color: #FFD100;
     text-align: center;
+}
+
+.hero-content {
+    width: 540px;
+    margin: 80px auto;
+}
+
+.hero-h {
+    font-size: 50px;
+}
+
+.hero-p {
+    font-size: 30px;
+    margin: 30px 0;
+}
+
+.groups {
+    background-color: #F7F7F7;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.grp-wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 1266px;
+    margin: auto;
+}
+
+.grp-card {
+    display: flex;
+    flex-direction: column;
+    width: 533px;
+    height: 530px;
+    background-color: #202020;
+    border-radius: 10px;
+    margin: 50px;
+    color: #FFD100;
+}
+
+.grp-img {
+    margin-top: 30px;
+}
+
+.grp-name {
+    font-size:40px;
+    margin-top: 10px;
+}
+
+.grp-btn{
+    height: 50px;
+    font-size: 30px;
+    width: 322px;
+    border-radius: 25px;
+    background-color: #FFD100;
+    border: none;
+    outline: none;
+    color: #202020;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.portfolio {
+    background-color: #202020;
+    color:#FFD100;
+    display:flex;
+    justify-content: center;
+    max-height: 342px;
+    padding: 60px 0;
+}
+
+.detail-cards {
+    padding: 0 50px;
+    text-align: center;
+}
+
+.num {
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.details {
+    margin-top: 12px;
+    font-size: 40px;
+}
+
+.newsletter {
+    display: flex;
+    background-color: #F7F7F7;
+    padding: 50px 200px;
+    justify-content: center;
+}
+
+.text {
+    font-size: 45px;
+    width: 563px;
+}
+
+.letter-email {
+    background-color: #D6D6D6;
+    height: 48px ;
+    width: 503px;
+    border-radius: 36.5px;
+    margin: auto;
+    display: flex;
+}
+
+.e-e{
+    color: #202020;
+    background-color: #D6D6D6;
+    outline: none;
+    width: 358px;
+    height: 48px;
+    border-radius: 36.5px;
+    padding: 0 10px;
+    margin: 0;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+}
+
+.e-s{
+    color: #333533;
+    background-color: #FFD100;
+    width: 125px;
+    height: 48px;
+    border-radius: 36.5px;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
 }

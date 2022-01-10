@@ -7,7 +7,7 @@ We have decided to make a website regarding an open-source community. The name o
 Make a website with 10 web pages.
 
 So we have deciede to include the following pages.
-- [ ] Home Page
+- [x] Home Page
 - [x] Sign Up Page
 - [x] Sign In Page
 - [x] Dashboard(Profile) Page

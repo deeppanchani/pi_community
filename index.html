@@ -39,11 +39,102 @@
     <section>
         <div class="landing">
             <div class="hero-content">
-                <div class="hero-h">pi COMMUNITY</div>
-                <div class="hero-p">An Open-Sourse Community. We promote pi-based learning.</div>
-                <div class="hero-p">Join Us today and start a new jorney in field of Open Source.</div>
-                <button class="btn-submit">Sign Up</button>
-                <button class="btn-submit">Sign In</button>
+                <div class="hero-h">pi <span class="thin">COMMUNITY</span></div>
+                <div class="hero-p"><span class="thin">An</span> Open-Sourse Community. <span class="thin">We promote</span> pi-based learning.</div>
+                <div class="hero-p">Join Us <span class="thin">today and</span> start a new jorney <span class="thin">in field of </span> Open Source.</div>
+                <button onclick="location.href='signup.html'" class="btn-submit" style="margin-left: 30px; margin-right: 30px;">Sign Up</button>
+                <button onclick="location.href='signin.html'" class="btn-submit" style="margin-left: 30px; margin-right: 30px;">Sign In</button>
+            </div>
+        </div>
+        <div class="groups">
+            <div class="hero-h">Groups</div>
+            <div class="grp-wrapper">
+                <div class="grp-card">
+                    <div class="grp-img">
+                        <img src="images/web_dev.svg" alt="web development picture">
+                    </div>
+                    <div class="grp-name">
+                        Web <span class="thin">Development</span>
+                    </div>
+                    <div>
+                        <button class="grp-btn" onclick="location.href='webdev.html'">Click To Know More</button>
+                    </div>
+                </div>
+                <div class="grp-card">
+                    <div class="grp-img">
+                        <img src="images/app_dev.svg" alt="app development picture">
+                    </div>
+                    <div class="grp-name">
+                        App <span class="thin">Development</span>
+                    </div>
+                    <div>
+                        <button class="grp-btn" onclick="location.href='appdev.html'">Click To Know More</button>
+                    </div>
+                </div>
+                <div class="grp-card">
+                    <div class="grp-img">
+                        <img src="images/iot.svg" alt="Internet of Things picture">
+                    </div>
+                    <div class="grp-name">
+                        Internet <span class="thin">of</span> Things
+                    </div>
+                    <div>
+                        <button class="grp-btn" onclick="location.href='iot.html'">Click To Know More</button>
+                    </div>
+                </div>
+                <div class="grp-card">
+                    <div class="grp-img">
+                        <img src="images/designing.svg" alt="Designing picture">
+                    </div>
+                    <div class="grp-name">
+                        Designing
+                    </div>
+                    <div>
+                        <button class="grp-btn" onclick="location.href='design.html'">Click To Know More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="portfolio">
+            <div class="detail-cards">
+                <div class="detail-img">
+                    <img src="images/project.svg" alt="Projects">
+                </div>
+                <div class="details">
+                    <span class="num">50+</span>
+                     Projects
+                </div>
+            </div>
+            <div class="detail-cards">
+                <div class="detail-img">
+                    <img src="images/contributors.svg" alt="Projects">
+                </div>
+                <div class="details">
+                    <span class="num">200+</span>
+                     Contributors
+                </div>
+            </div>
+            <div class="detail-cards">
+                <div class="detail-img">
+                    <img src="images/blog.svg" alt="Projects">
+                </div>
+                <div class="details">
+                    <span class="num">300+</span>
+                     Blogs
+                </div>
+            </div>
+        </div>
+
+        <div class="newsletter">
+            <div class="text">
+                <span class="thin">Subscribe to</span><br>Newsletter
+            </div>
+            <div class="letter-email">
+                <form action="" method="post">
+                    <input class="e-e" type="email" name="Email" id="email" placeholder="Enter your email addrezss">
+                    <input class="e-s" type="submit" value="Submit">
+                </form>
             </div>
         </div>
     </section>
