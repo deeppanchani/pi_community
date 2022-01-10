@@ -11,7 +11,7 @@ So we have deciede to include the following pages.
 - [x] Sign Up Page
 - [x] Sign In Page
 - [x] Dashboard(Profile) Page
-- [ ] Edit Profile Page
+- [x] Edit Profile Page
 - [x] Team Page
 - [x] Group Page
 - [x] Blogs Page
