@@ -247,7 +247,6 @@ li a:hover:not(.active) {
     width: 300px;
     border-radius: 36.5px;
     font-size: 15px;
-    padding-left: 20px;
 }
 
 .search-bar:focus {
@@ -260,6 +259,11 @@ li a:hover:not(.active) {
     border-width: 0px;
     width: 45px;
     height: 40px;
+}
+
+.search-button:hover{
+    cursor: pointer;
+    background-color: #202020;
 }
 
 .search-button img {
@@ -371,8 +375,18 @@ li a:hover:not(.active) {
     padding: 10px 0px;
 }
 
+.btn-submit:hover{
+    cursor: pointer;
+    background-color: #ffbc00;
+}
+
 .btn-black {
     font-size: 15px;
+}
+
+.btn-black:hover{
+    cursor: pointer;
+    background-color: #ffbc00;
 }
 
 .team {
@@ -488,6 +502,7 @@ form input{
     height: 25px;
     border: none;
     border-radius: 20px;
+    cursor: pointer;
 }
 .cancel_button{
     width: 100px;
@@ -532,7 +547,7 @@ form input{
 .container_dashboard{
     background-color: #333533;
     margin: 8vh 5vw;
-    margin-bottom: 3vh;
+    margin-bottom: 10vh;
     padding: 5vh 5vw;
 }
 .biodata{
@@ -593,8 +608,7 @@ form input{
     padding: 15px 20px;
     width: 150px;
     font-size: 1.1rem;
-   
-    background-color: #333533;
+    background-color: #FFD100;
     cursor: pointer;
     margin-right: 5vw;
 }
@@ -605,13 +619,13 @@ form input{
     width: 150px;
     font-size: 1.1rem;
    
-    background-color: #202020;
+    background-color: #ffbc00;
     cursor: pointer;
     margin-right: 5vw;
 }
 .footer_dashboard a{
     text-decoration: none;
-    color: #FFD100;
+    color: #202020;
 }
 
 .landing {
@@ -686,6 +700,11 @@ form input{
     margin-bottom: 50px;
 }
 
+.grp-btn:hover{
+    cursor: pointer;
+    background-color: #ffbc00;
+}
+
 .portfolio {
     background-color: #202020;
     color:#FFD100;
@@ -742,6 +761,7 @@ form input{
     margin: 0;
     font-size: 15px;
     font-family: 'Lato', sans-serif;
+    cursor: pointer;
 }
 
 .e-s{
@@ -754,6 +774,11 @@ form input{
     margin: 0;
     font-size: 20px;
     font-family: 'Lato', sans-serif;
+}
+
+.e-s:hover{
+    cursor: pointer;
+    background-color: #ffbc00;
 }
 /* edit profile */
 
@@ -783,8 +808,8 @@ form input{
 }
 
 .Edit_form{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto;
     padding-right: 100px;
     
 }
@@ -796,8 +821,10 @@ form input{
     margin-left: 20px;
     margin-bottom: 15px;
     height: 25px;
+    outline: none;
     border: none;
     background-color: #202020;
+    color: #FFD100;
     border-radius: 2px;
 }
 .footer_edit_dashboard{
