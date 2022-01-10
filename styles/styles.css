@@ -449,6 +449,159 @@ li a:hover:not(.active) {
     margin: auto 12.5px;
 }
 
+/* Sign up form */
+
+.bold{
+    font-weight: 500;
+}
+
+.container_signup{
+    background-color: #202020;
+    color: #FFD100;
+    width: 500px;
+    margin: auto;
+    margin-top: 10vh;
+    border-radius: 5px;
+}
+
+.container_signup h2{
+    text-align: center;
+    padding-top: 17px;
+    padding-bottom: 10px;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.form_lables{
+    display: block;
+    margin-left: 90px;
+    width: 100px;
+}
+form input{
+    width: 200px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    height: 25px;
+    border: none;
+    border-radius: 20px;
+}
+.cancel_button{
+    width: 100px;
+    margin-left: 120px;
+    background-color: #e9dd58;
+    color: #202020;
+}
+.cancel_button:hover{
+    width: 100px;
+    margin-left: 120px;
+    background-color: #FFD100;
+    cursor: pointer;
+    color: #202020;
+}
+
+.Sign_button{
+    width: 100px;
+    margin-left: 50px;
+    background-color: #FFD100;
+    color: #202020;
+}
+.Sign_button:hover{
+    width: 100px;
+    margin-left: 50px;
+    background-color: #e9dd58;
+    cursor: pointer;
+    color: #202020;
+}
+
+.form_footer{
+    text-align: center;
+    color: #e9dd58;
+    padding-bottom: 30px;
+}
+
+.form_footer a{
+    color: #FFD100;
+    font-weight: bold;
+}
+
+/* dashboard */
+.container_dashboard{
+    background-color: #333533;
+    margin: 8vh 5vw;
+    margin-bottom: 3vh;
+    padding: 5vh 5vw;
+}
+.biodata{
+    margin-top: 5vh;
+    color: #FFD100;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+
+#profile_pic{
+    width: 15vw;
+    margin-bottom: 100px;
+    padding-left: 5vw;
+}
+
+#biodata{
+    font-size: 1.5rem;
+    padding-left: 8vw;
+    
+}
+
+#social_media{
+    padding-top: 20vh;
+}
+#social_media img{
+    margin-right: 10px;
+}
+
+.figures{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5vw;
+    margin-bottom: 3vh;
+}
+
+.figures div{
+    background-color: #FFD100;
+    color: #333533;
+    text-align: center;
+    padding: 10vh 5vw;
+    border: none;
+    border-radius: 5px;
+}
+.number{
+    font-size: 3.5rem;
+}
+
+.footer_dashboard{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 5vh;
+}
+
+.footer_dashboard button{
+    border: none;
+    border-radius: 30px;
+    padding: 15px 20px;
+    width: 150px;
+    font-size: 1.1rem;
+   
+    background-color: #333533;
+    cursor: pointer;
+    margin-right: 5vw;
+}
+.footer_dashboard a{
+    text-decoration: none;
+    color: #FFD100;
+}
+
 .landing {
     position: relative;
     height: 700px;
