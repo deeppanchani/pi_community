@@ -447,13 +447,10 @@ li a:hover:not(.active) {
 
 .social-links img {
     margin: auto 12.5px;
-=======
-
+}
 
 /* Sign up form */
-.light{
-    font-weight: 300;
-}
+
 .bold{
     font-weight: 500;
 }
