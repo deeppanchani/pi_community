@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- java script animation plugin start -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- java script animation plugin end -->
+
     <!--Start of Meta Discrption-->
     <meta charset="UTF-8">
     <meta name="description" content="Open Source Community Site">
@@ -49,7 +53,7 @@
         <div class="groups">
             <div class="hero-h">Groups</div>
             <div class="grp-wrapper">
-                <div class="grp-card">
+                <div class="grp-card" data-aos="fade-right">
                     <div class="grp-img">
                         <img src="images/web_dev.svg" alt="web development picture">
                     </div>
@@ -60,7 +64,7 @@
                         <button class="grp-btn" onclick="location.href='webdev.html'">Click To Know More</button>
                     </div>
                 </div>
-                <div class="grp-card">
+                <div class="grp-card" data-aos="fade-left">
                     <div class="grp-img">
                         <img src="images/app_dev.svg" alt="app development picture">
                     </div>
@@ -71,7 +75,7 @@
                         <button class="grp-btn" onclick="location.href='appdev.html'">Click To Know More</button>
                     </div>
                 </div>
-                <div class="grp-card">
+                <div class="grp-card" data-aos="fade-right">
                     <div class="grp-img">
                         <img src="images/iot.svg" alt="Internet of Things picture">
                     </div>
@@ -82,7 +86,7 @@
                         <button class="grp-btn" onclick="location.href='iot.html'">Click To Know More</button>
                     </div>
                 </div>
-                <div class="grp-card">
+                <div class="grp-card" data-aos="fade-left">
                     <div class="grp-img">
                         <img src="images/designing.svg" alt="Designing picture">
                     </div>
@@ -148,5 +152,15 @@
         </div>
     </div>
     <!--End of Footer Section-->
+
+    <!-- starting of js -->
+    <script src="./scripts/scripts.js"></script>
+    <!-- fade effect plugin -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+         AOS.init();
+    </script>
+    <!-- fade effect plugin -->
+    <!-- ending of js -->
 </body>
 </html>
