@@ -504,18 +504,14 @@ form input{
     border-radius: 20px;
     cursor: pointer;
 }
-.cancel_button{
-    width: 100px;
-    margin-left: 120px;
-    background-color: #e9dd58;
-    color: #202020;
-}
-.cancel_button:hover{
-    width: 100px;
-    margin-left: 120px;
-    background-color: #FFD100;
+form button{
+    width: 200px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    height: 25px;
+    border: none;
+    border-radius: 20px;
     cursor: pointer;
-    color: #202020;
 }
 
 .Sign_button{
@@ -528,6 +524,20 @@ form input{
     width: 100px;
     margin-left: 50px;
     background-color: #e9dd58;
+    cursor: pointer;
+    color: #202020;
+}
+
+.cancel_button{
+    width: 100px;
+    margin-left: 120px;
+    background-color: #e9dd58;
+    color: #202020;
+}
+.cancel_button:hover{
+    width: 100px;
+    margin-left: 120px;
+    background-color: #FFD100;
     cursor: pointer;
     color: #202020;
 }
@@ -781,11 +791,20 @@ form input{
     background-color: #ffbc00;
 }
 /* edit profile */
-
+.container_editProfile{
+    width: 500px;
+    background-color: #333533;
+    margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    padding: 5vh 5vw;
+}
 .Edit_container {
+  
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-top: 5vh;
+    font-size: 1.2rem;
 }
 
 
@@ -814,13 +833,13 @@ form input{
     
 }
 .Edit_form .form_lables{
-    margin-left: 0;
+    margin-left: 40px;
 }
 .Square{
-    width: 200px;
+    width: 250px;
     margin-left: 20px;
-    margin-bottom: 15px;
-    height: 25px;
+    margin-bottom: 25px;
+    height: 30px;
     outline: none;
     border: none;
     background-color: #202020;
@@ -835,10 +854,12 @@ form input{
 }
 
 .footer_edit_dashboard button{
+    height: 50px;
+     width: 160px;
     border: none;
     border-radius: 30px;
     padding: 10px 15px;
-    width: 120px;
+   
     font-size: 1.1rem;   
     background-color: #FFD100;
     cursor: pointer;
@@ -846,10 +867,12 @@ form input{
     margin-right: 5vw;    
 }
 .footer_edit_dashboard button:hover{
+    height: 50px;
+    width: 160px;
     border: none;
     border-radius: 30px;
     padding: 10px 15px;
-    width: 120px;
+    
     font-size: 1.1rem;   
     background-color: #e9dd58;
     cursor: pointer;
