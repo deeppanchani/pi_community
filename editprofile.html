@@ -31,30 +31,30 @@
         <li><a href="blogs.html">Blogs</a></li>
         <li><a href="team.html">Team</a></li>
         <li style="float:right"></li>
-        <li style="float:right"><a class="active" href="dashboard.html">Dashboard</a></li>
+        <li style="float:right"><a class="active" href="dashboard.php">Dashboard</a></li>
     </ul>
     <!--End of Nav Bar Section-->
 
     <!-- Start of the content section -->
     <div class="container_dashboard">
-        <div class="Edit_container">
-            <div class="change_profile">
-                <img src="./images/profile_img.svg" alt="Profile Pic" id="profile_pic_edit">
-                <h3><u>Change Profile Picture</u></h3>
+        <form action="./dashboard.php" method="POST">
+            
+            <div class="Edit_container">
+                <div class="Edit_form">                      
+                        <span class="form_lables">First Name</span>  <input name="fname" class="Square" type="text" required>
+                        <span class="form_lables">Last Name</span>  <input name="lname" class="Square" type="text" required>
+                        <span class="form_lables">Speciality</span>  <input name="bio" type="text" class="Square" required>
+                        <span class="form_lables">College</span>  <input name="college" type="text" class="Square" required>
+                        <span class="form_lables">Github Id</span>  <input name="github" type="url" class="Square" required>
+                        <span class="form_lables">Linkedin Id</span>  <input name="linkedin" type="url" class="Square" required>                     
+                        <span class="form_lables">Upload Your Image</span> <input class="btn-black" type="file" id="img" name="img" accept="image/*">
+                </div>
             </div>
-
-            <div class="Edit_form">           
-                    <span class="form_lables">Name</span>  <input class="Square" type="text" required>
-                    <span class="form_lables">Speciality</span>  <input type="text" class="Square" required>
-                    <span class="form_lables">College</span>  <input type="text" class="Square" required>
-                    <span class="form_lables">Github Id</span>  <input type="text" class="Square" required>
-                    <span class="form_lables">Linkedin Id</span>  <input type="text" class="Square" required>          
+            <div class="footer_edit_dashboard">
+                <button name="submit" type="submit">Submit</button>   
+                <button name="cancel"><a href="./editprofile.html">Cancel</a> </button>
             </div>
-        </div>
-        <div class="footer_edit_dashboard">
-            <button><a href="./addblog.html">Submit</a> </button>   
-            <button><a href="./editprofile.html">Cancel</a> </button>
-        </div>
+        </form>
     </div>
     <!-- End of the content section -->
 
