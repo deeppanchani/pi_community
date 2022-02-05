@@ -21,6 +21,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!--End of External Files-->
 
     <!--Adding Favicon-->
@@ -54,7 +55,7 @@
         <div class="heading">Blog <span class="thin">Post</span></div>
             <form class="explore" action="" method="post">
                 <span class="search">
-                    <input class="search-bar" type="text" name="search" placeholder="Search">
+                    <input class="search-bar" type="text" name="search" id="myInput" title="search" onkeyup="myFunction()" placeholder="Search">
                     <select class="drop-down" id="category" name="category">
                         <option value="all">All</option>
                         <option value="webdev">Web Development</option>
@@ -65,14 +66,32 @@
                     <button class="search-button" type="submit"><img src="images/search.svg" alt="search icon"></button>
                 </span>
             </form>
+        <script>
+            function myFunction() {
+                const input = document.getElementById('myInput').value.toUpperCase();
+                
+                const cardContainer = document.getElementById('blog-list');
+                const card = cardContainer.getElementsByClassName('blog-listing');
 
-        <div class="blog-list">
-            <div class="blog-listing">
-                <div class="date">
-                    1 January, 2022
+                for (let i = 0; i < card.length; i++) {
+                    let title = card[i].querySelector(".info .b-head a.Heading");
+                    console.log(title);
+
+                    if(title.innerText.toUpperCase().indexOf(input) > -1) {
+                        card[i].style.display = "";
+                    } else {
+                        card[i].style.display = "none";
+                    }
+                }
+            }
+        </script>
+
+        <div id="blog-list">
+            <div class="blog-listing" id="blog">
+                <div class="date">1 January, 2022</h1>
                 </div>
                 <div class="info">
-                    <div class="b-head"><a href="blogpost_0.php">How to center a div?</a></div>
+                    <div class="b-head"><a href="blogpost_0.php" class="Heading">How to center a div?</a></div>
                     <div class="b-info">Web Development, HTML, CSS</div>
                     <div class="b-peek">Quisque vel quam mi. Etiam euismod, orci sit amet blandit posuere, nunc urna porttitor lorem, ut faucibus quam dui viverra libero. Etiam nec auctor dui. Nullam sollicitudin lectus orci, ut gravida libero tempor in.</div>
                     <div class="b-profile">
@@ -81,12 +100,11 @@
                     </div>
                 </div>
             </div>
-            <div class="blog-listing">
-                <div class="date">
-                    1 January, 2022
+            <div class="blog-listing" id="blog">
+                <div class="date">1 January, 2022</h1>
                 </div>
                 <div class="info">
-                    <div class="b-head"><a href="blogpost_0.php">How to center a div?</a></div>
+                    <div class="b-head"><a href="blogpost_0.php" class="Heading">What is UX Design?</a></div>
                     <div class="b-info">Web Development, HTML, CSS</div>
                     <div class="b-peek">Quisque vel quam mi. Etiam euismod, orci sit amet blandit posuere, nunc urna porttitor lorem, ut faucibus quam dui viverra libero. Etiam nec auctor dui. Nullam sollicitudin lectus orci, ut gravida libero tempor in.</div>
                     <div class="b-profile">
@@ -95,68 +113,11 @@
                     </div>
                 </div>
             </div>
-            <div class="blog-listing">
-                <div class="date">
-                    1 January, 2022
+            <div class="blog-listing" id="blog">
+                <div class="date">1 January, 2022</h1>
                 </div>
                 <div class="info">
-                    <div class="b-head"><a href="blogpost_0.php">How to center a div?</a></div>
-                    <div class="b-info">Web Development, HTML, CSS</div>
-                    <div class="b-peek">Quisque vel quam mi. Etiam euismod, orci sit amet blandit posuere, nunc urna porttitor lorem, ut faucibus quam dui viverra libero. Etiam nec auctor dui. Nullam sollicitudin lectus orci, ut gravida libero tempor in.</div>
-                    <div class="b-profile">
-                        <img src="images/profile_img.svg" alt="Profile Picture" width="50px">
-                        <span class="b-auth">John Doe</span>
-                    </div>
-                </div>
-            </div>
-            <div class="blog-listing">
-                <div class="date">
-                    1 January, 2022
-                </div>
-                <div class="info">
-                    <div class="b-head"><a href="blogpost_0.php">How to center a div?</a></div>
-                    <div class="b-info">Web Development, HTML, CSS</div>
-                    <div class="b-peek">Quisque vel quam mi. Etiam euismod, orci sit amet blandit posuere, nunc urna porttitor lorem, ut faucibus quam dui viverra libero. Etiam nec auctor dui. Nullam sollicitudin lectus orci, ut gravida libero tempor in.</div>
-                    <div class="b-profile">
-                        <img src="images/profile_img.svg" alt="Profile Picture" width="50px">
-                        <span class="b-auth">John Doe</span>
-                    </div>
-                </div>
-            </div>
-            <div class="blog-listing">
-                <div class="date">
-                    1 January, 2022
-                </div>
-                <div class="info">
-                    <div class="b-head"><a href="blogpost_0.php">How to center a div?</a></div>
-                    <div class="b-info">Web Development, HTML, CSS</div>
-                    <div class="b-peek">Quisque vel quam mi. Etiam euismod, orci sit amet blandit posuere, nunc urna porttitor lorem, ut faucibus quam dui viverra libero. Etiam nec auctor dui. Nullam sollicitudin lectus orci, ut gravida libero tempor in.</div>
-                    <div class="b-profile">
-                        <img src="images/profile_img.svg" alt="Profile Picture" width="50px">
-                        <span class="b-auth">John Doe</span>
-                    </div>
-                </div>
-            </div>
-            <div class="blog-listing">
-                <div class="date">
-                    1 January, 2022
-                </div>
-                <div class="info">
-                    <div class="b-head"><a href="blogpost_0.php">How to center a div?</a></div>
-                    <div class="b-info">Web Development, HTML, CSS</div>
-                    <div class="b-peek">Quisque vel quam mi. Etiam euismod, orci sit amet blandit posuere, nunc urna porttitor lorem, ut faucibus quam dui viverra libero. Etiam nec auctor dui. Nullam sollicitudin lectus orci, ut gravida libero tempor in.</div>
-                    <div class="b-profile">
-                        <img src="images/profile_img.svg" alt="Profile Picture" width="50px">
-                        <span class="b-auth">John Doe</span>
-                    </div>
-                </div>
-            </div>
-            <div class="blog-listing">
-                <div class="date">
-                    1 January, 2022
-                </div>
-                <div class="info">
-                    <div class="b-head"><a href="blogpost_0.php">How to center a div?</a></div>
+                    <div class="b-head"><a href="blogpost_0.php" class="Heading">Learn GitHub</a></div>
                     <div class="b-info">Web Development, HTML, CSS</div>
                     <div class="b-peek">Quisque vel quam mi. Etiam euismod, orci sit amet blandit posuere, nunc urna porttitor lorem, ut faucibus quam dui viverra libero. Etiam nec auctor dui. Nullam sollicitudin lectus orci, ut gravida libero tempor in.</div>
                     <div class="b-profile">
