@@ -34,18 +34,17 @@
     <div class="container_signup">
         <h2><span class="thin">Sign</span> <span class="bold">Up</span> </h2>
         <div class="signup_form">
-            <form action="">
-               <span class="form_lables">First Name</span>  <input type="text" required>
+            <form action="includes/signup.inc.php" method="POST">
+               <span class="form_lables" >First Name</span>  <input type="text" name="fname" required>
                 <br>
-               <span class="form_lables">Last Name</span>  <input type="text" required>
+               <span class="form_lables" >Last Name</span>  <input type="text"name="lname" required>
                 <br>
-               <span class="form_lables">Email</span>  <input type="email" required>
+               <span class="form_lables" >Email</span>  <input type="email" name="email" required>
                 <br>
-               <span class="form_lables">Password</span>  <input type="password" required>
+               <span class="form_lables" >Password</span>  <input type="password" name="pwd" required>
                 <br>
-               <input type="button" value="Cancel" class="cancel_button">
-               <input type="button" value="Sign Up" class="Sign_button">
-
+               <input type="button" value="Cancel" name="cancel"class="cancel_button">
+               <button type="submit" value="Signup" name="signup" class="Sign_button"> Sign Up </button>
             </form>
             <div class="form_footer">Already a member? <a href="./signin.html">Sign In</a></div>
         </div>
