@@ -1,16 +1,7 @@
 <?php
     session_start();
 ?>
-<?php
 
-    if(isset($_SESSION["email"])){
-        
-    }
-    else {
-        echo '<script>alert("To access Dashboard you need to Sign In first")</script>';
-        header("location: ./index.php");
-    }
-?>
 
 <!DOCTYPE html>
 <html lang="en">

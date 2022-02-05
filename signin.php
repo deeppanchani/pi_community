@@ -58,7 +58,7 @@
                 <br>
                <span class="form_lables">Password</span>  <input type="password" name="pwd" required>
                 <br>
-               <button type="cancel" value="cancel" name="Cancel" class="Sign_button"> Cancel </button>
+               <button type="cancel" value="cancel" name="Cancel" class="Sign_button cancel_button"> Cancel </button>
                <button type="submit" value="signin" name="signin" class="Sign_button"> Sign In </button>
             </form>
             <div class="form_footer">Don't have an account? <a href="./signup.php">Sign Up</a></div>

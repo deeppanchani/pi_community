@@ -50,7 +50,7 @@
     <!--End of Nav Bar Section-->
 
     <!-- Start of the content section -->
-    <div class="container_dashboard">
+    <div class="container_editProfile">
         <form action="./includes/editprofile.inc.php" method="POST">
             
             <div class="Edit_container">
