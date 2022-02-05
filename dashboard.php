@@ -1,3 +1,28 @@
+<?php
+
+if (isset($_POST["submit"])) {
+    print_r($_POST);
+    $fname = $_POST["fname"];
+    $lname = $_POST["lname"];
+    $bio = $_POST["bio"];
+    $college = $_POST["college"];
+    $github = $_POST["github"];
+    $linkedin = $_POST["linkedin"];
+    $img = $_POST["img"];
+}else {
+    $fname = "John";
+    $lname = "Doe";
+    $bio = "Web developer";
+    $college = "IIIT nagpur";
+    $github = "#";
+    $linkedin = "#";
+    $img = "./images/profile_img.svg";
+}
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,7 +56,7 @@
         <li><a href="blogs.html">Blogs</a></li>
         <li><a href="team.html">Team</a></li>
         <li style="float:right"></li>
-        <li style="float:right"><a class="active" href="dashboard.html">Dashboard</a></li>
+        <li style="float:right"><a class="active" href="dashboard.php">Dashboard</a></li>
     </ul>
     <!--End of Nav Bar Section-->
 
@@ -39,16 +64,17 @@
     <div class="container_dashboard">
         <div class="biodata">
             <img src="./images/profile_img.svg" alt="Profile Pic" id="profile_pic">
+            <!-- <img src="<?php echo $img; ?>" alt="Profile Pic" id="profile_pic"> -->
    
             <div id="biodata">
-                <h3>John Doe</h3>  
-                Web Developer <br>
-                Student at IIIT Nagpur
+                <h3><?php echo $fname. " ". $lname; ?></h3>  
+                <?php echo $bio; ?> <br>
+                Student at <?php echo $college; ?>
             </div>
 
             <div id="social_media">
-                <a href="https://github.com/deeppanchani/pi_community"><img src="images/github.svg" alt="GitHub Logo" width="30px"></a>
-                <a href="https://www.linkedin.com"><img src="images/linkedin.svg" alt="LinkedIn Logo" width="30px"></a>
+                <a href="<?php echo $github; ?>"><img src="images/github.svg" alt="GitHub Logo" width="30px"></a>
+                <a href="<?php echo $linkedin ?>"><img src="images/linkedin.svg" alt="LinkedIn Logo" width="30px"></a>
             </div>
         </div>
         <div class="figures">

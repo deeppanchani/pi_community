@@ -43,7 +43,7 @@
                <input type="button" value="Sign Up" class="Sign_button">
 
             </form>
-            <div class="form_footer">Don't have an account? <a href="./signup.html">Sign Up</a></div>
+            <div class="form_footer">Don't have an account? <a href="./signup.php">Sign Up</a></div>
         </div>
 
 
