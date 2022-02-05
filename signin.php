@@ -30,18 +30,36 @@
     </ul>
     <!--End of Nav Bar Section-->
 
+    <?php
+    
+        if(isset($_GET["error"])){
+            if($_GET["error"] == "invalidemail") {
+                echo '<script>alert("Enter A Valid Email.")</script>';
+            }
+            if($_GET["error"] == "nouser") {
+                echo '<script>alert("Email Not Found. Please try again or Register.")</script>';
+            }
+            if($_GET["error"] == "wrongpwd") {
+                echo '<script>alert("Wrong Password. Please Try Again.")</script>';
+            }
+            if($_GET["error"] == "none") {
+                header("location: ./index.html");
+            }
+        }
+
+    ?>
+
     <!--Start of Form Section-->
     <div class="container_signup">
         <h2><span class="thin">Sign</span> <span class="bold">In</span> </h2>
         <div class="signup_form">
-            <form action="">
-               <span class="form_lables">Email</span>  <input type="email" required>
+            <form action="includes/signin.inc.php" method="POST">
+               <span class="form_lables">Email</span>  <input type="email" name="email" required>
                 <br>
-               <span class="form_lables">Password</span>  <input type="password" required>
+               <span class="form_lables">Password</span>  <input type="password" name="pwd" required>
                 <br>
-               <input type="button" value="Cancel" class="cancel_button">
-               <input type="button" value="Sign Up" class="Sign_button">
-
+               <button type="cancel" value="cancel" name="Cancel" class="Sign_button"> Cancel </button>
+               <button type="submit" value="signin" name="signin" class="Sign_button"> Sign In </button>
             </form>
             <div class="form_footer">Don't have an account? <a href="./signup.html">Sign Up</a></div>
         </div>

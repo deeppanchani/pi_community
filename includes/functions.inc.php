@@ -12,7 +12,7 @@
     }
 
     function emailExists($email,$conn){
-        $sql = "SELECT * FROM users WHERE usersEmail = ?;";
+        $sql = "SELECT * FROM users WHERE userEmail = ?;";
         $stmt = mysqli_stmt_init($conn);
 
         if(!mysqli_stmt_prepare($stmt,$sql)){
@@ -37,21 +37,44 @@
     }
 
     function createUser($conn,$fname,$lname,$email,$pwd){
-        $sql = "INSERT INTO users (fullName, lastName, usersEmail, usersPwd, bio, userProfile, usersGithub, usersLinkedin) VALUES (?,?,?,?,?,?,?,?);";
+        $sql = "INSERT INTO users (fName, lName, userEmail, userPwd, bio, userProfile, userGithub, userLinkedin) VALUES (?,?,?,?,?,?,?,?);";
         $stmt = mysqli_stmt_init($conn);
         if(!mysqli_stmt_prepare($stmt,$sql)){
             header("location: ../signup.php?error=stmtfailed");
             exit();
         }
-        $nullvar=NULL;
+
         $isphoto=0;
-
         $hashpwd = password_hash($pwd, PASSWORD_DEFAULT);
-
-        echo $hashpwd;
-        mysqli_stmt_bind_param($stmt,"sssssiss",$fname,$lname,$email,$hashpwd,$nullvar,$isphoto,$nullvar,$nullvar,);
+        
+        mysqli_stmt_bind_param($stmt,"sssssiss",$fname,$lname,$email,$hashpwd,$isphoto,$isphoto,$isphoto,$isphoto);
         mysqli_stmt_execute($stmt);
         mysqli_stmt_close($stmt);
-        header("location: ../signup.php?error=none".$pwd);
+        header("location: ../signup.php?error=none");
         exit();
+    }
+
+    function loginUser($conn, $email, $pwd){
+        $userexists = emailExists($email,$conn);
+
+        if($userexists=== false){
+            header("location: ../signin.php?error=nouser");
+            exit();
+        }       
+        
+        $hashpwd = $userexists["userPwd"];
+        $checkpwd = password_verify($pwd, $hashpwd);
+
+        if($checkpwd === false){
+            header("location: ../signin.php?error=wrongpwd");
+            exit();
+        }
+        else if($checkpwd === true){
+            session_start(); 
+            $_SESSION["email"]=$userexists["userEmail"];
+            $_SESSION["fname"]=$userexists["fname"];
+            $_SESSION["lname"]=$userexists["lname"];
+            header("location: ../index.php");
+            exit();
+        }
     }

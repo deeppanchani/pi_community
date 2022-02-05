@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,8 +38,19 @@
         <li><a class="active" href="index.html">Home</a></li>
         <li><a href="blogs.html">Blogs</a></li>
         <li><a href="team.html">Team</a></li>
-        <li style="float:right"></li>
-        <li style="float:right"><a href="dashboard.html">Dashboard</a></li>
+        <li style="float:right;"></li>
+        <?php
+
+            if(isset($_SESSION["email"])){
+                echo "<li style='float:right;'><a href='./includes/logout.inc.php'> Logout </a></li>";
+                echo "<li style='float:right;'><a href='dashboard.html'>".$_SESSION["fname"]." ".$_SESSION["lname"]."</a></li>";
+            }
+            else{
+                echo "<li style='float:right;'><a href='signup.php'>Sign Up</a></li>";
+                echo "<li style='float:right;'><a href='signin.php'>Sign In</a></li>";
+            }
+
+        ?>
     </ul>
     <!--End of Nav Bar Section-->
 

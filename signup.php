@@ -30,6 +30,23 @@
     </ul>
     <!--End of Nav Bar Section-->
 
+    <?php
+        if(isset($_GET["error"])){
+            if($_GET["error"] == "invalidemail") {
+                echo '<script>alert("Enter A Valid Email.")</script>';
+            }
+            if($_GET["error"] == "emailexists") {
+                echo '<script>alert("Email Already Exists. Trying Signing In.")</script>';
+            }
+            if($_GET["error"] == "passwordweak") {
+                echo '<script>alert("Password should have at least 8 character and at max 20 characters.")</script>';
+            }
+            if($_GET["error"] == "none") {
+                header("location: ./index.html");
+            }
+        }
+    ?>
+
     <!--Start of Form Section-->
     <div class="container_signup">
         <h2><span class="thin">Sign</span> <span class="bold">Up</span> </h2>
@@ -43,7 +60,7 @@
                 <br>
                <span class="form_lables" >Password</span>  <input type="password" name="pwd" required>
                 <br>
-               <input type="button" value="Cancel" name="cancel"class="cancel_button">
+               <button type="cancel" value="cancel" name="Cancel" class="Sign_button"> Cancel </button>
                <button type="submit" value="Signup" name="signup" class="Sign_button"> Sign Up </button>
             </form>
             <div class="form_footer">Already a member? <a href="./signin.html">Sign In</a></div>
