@@ -1,7 +1,6 @@
 <?php
     session_start();
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,15 +34,15 @@
     <!--Start of Nav Bar Section-->
     <ul>
         <li></li>
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="blogs.html">Blogs</a></li>
-        <li><a href="team.html">Team</a></li>
+        <li><a class="active" href="index.php">Home</a></li>
+        <li><a href="blogs.php">Blogs</a></li>
+        <li><a href="team.php">Team</a></li>
         <li style="float:right;"></li>
         <?php
 
             if(isset($_SESSION["email"])){
                 echo "<li style='float:right;'><a href='./includes/logout.inc.php'> Logout </a></li>";
-                echo "<li style='float:right;'><a href='dashboard.html'>".$_SESSION["fname"]." ".$_SESSION["lname"]."</a></li>";
+                echo "<li style='float:right;'><a href='dashboard.php'>".$_SESSION["fname"]." ".$_SESSION["lname"]."</a></li>";
             }
             else{
                 echo "<li style='float:right;'><a href='signup.php'>Sign Up</a></li>";
@@ -76,7 +75,7 @@
                         Web <span class="thin">Development</span>
                     </div>
                     <div>
-                        <button class="grp-btn" onclick="location.href='webdev.html'">Click To Know More</button>
+                        <button class="grp-btn" onclick="location.href='webdev.php'">Click To Know More</button>
                     </div>
                 </div>
                 <div class="grp-card" data-aos="fade-left">
@@ -87,7 +86,7 @@
                         App <span class="thin">Development</span>
                     </div>
                     <div>
-                        <button class="grp-btn" onclick="location.href='appdev.html'">Click To Know More</button>
+                        <button class="grp-btn" onclick="location.href='appdev.php'">Click To Know More</button>
                     </div>
                 </div>
                 <div class="grp-card" data-aos="fade-right">
@@ -98,7 +97,7 @@
                         Internet <span class="thin">of</span> Things
                     </div>
                     <div>
-                        <button class="grp-btn" onclick="location.href='iot.html'">Click To Know More</button>
+                        <button class="grp-btn" onclick="location.href='iot.php'">Click To Know More</button>
                     </div>
                 </div>
                 <div class="grp-card" data-aos="fade-left">
@@ -109,7 +108,7 @@
                         Designing
                     </div>
                     <div>
-                        <button class="grp-btn" onclick="location.href='design.html'">Click To Know More</button>
+                        <button class="grp-btn" onclick="location.href='design.php'">Click To Know More</button>
                     </div>
                 </div>
             </div>

@@ -1,4 +1,7 @@
 <?php
+    session_start();
+?>
+<?php
 
 if (isset($_POST["submit"])) {
     print_r($_POST);
@@ -52,11 +55,22 @@ if (isset($_POST["submit"])) {
     <!--Start of Nav Bar Section-->
     <ul>
         <li></li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="blogs.html">Blogs</a></li>
-        <li><a href="team.html">Team</a></li>
-        <li style="float:right"></li>
-        <li style="float:right"><a class="active" href="dashboard.php">Dashboard</a></li>
+        <li><a class="active" href="index.php">Home</a></li>
+        <li><a href="blogs.php">Blogs</a></li>
+        <li><a href="team.php">Team</a></li>
+        <li style="float:right;"></li>
+        <?php
+
+            if(isset($_SESSION["email"])){
+                echo "<li style='float:right;'><a href='./includes/logout.inc.php'> Logout </a></li>";
+                echo "<li style='float:right;'><a href='dashboard.php'>".$_SESSION["fname"]." ".$_SESSION["lname"]."</a></li>";
+            }
+            else{
+                echo "<li style='float:right;'><a href='signup.php'>Sign Up</a></li>";
+                echo "<li style='float:right;'><a href='signin.php'>Sign In</a></li>";
+            }
+
+        ?>
     </ul>
     <!--End of Nav Bar Section-->
 
@@ -94,8 +108,8 @@ if (isset($_POST["submit"])) {
     </div>
     <div class="footer_dashboard">
         
-        <button><a href="./editprofile.html">Edit Profile</a> </button>
-        <button><a href="./addblog.html">New Blog</a> </button>
+        <button><a href="./editprofile.php">Edit Profile</a> </button>
+        <button><a href="./addblog.php">New Blog</a> </button>
     </div>
     <!-- Ent of the content section -->
 

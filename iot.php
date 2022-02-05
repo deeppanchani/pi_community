@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--End of Meta Discrption-->
 
-    <title>Designing | Pi Community Open-Source Community</title>
+    <title>Internet of Things | Pi Community Open-Source Community</title>
 
     <!--Start of External Files-->
     <link rel="stylesheet" href="styles/styles.css">
@@ -27,32 +30,48 @@
     <!--Start of Nav Bar Section-->
     <ul>
         <li></li>
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="blogs.html">Blogs</a></li>
-        <li><a href="team.html">Team</a></li>
-        <li style="float:right"></li>
-        <li style="float:right"><a href="dashboard.html">Dashboard</a></li>
+        <li><a class="active" href="index.php">Home</a></li>
+        <li><a href="blogs.php">Blogs</a></li>
+        <li><a href="team.php">Team</a></li>
+        <li style="float:right;"></li>
+        <?php
+
+            if(isset($_SESSION["email"])){
+                echo "<li style='float:right;'><a href='./includes/logout.inc.php'> Logout </a></li>";
+                echo "<li style='float:right;'><a href='dashboard.php'>".$_SESSION["fname"]." ".$_SESSION["lname"]."</a></li>";
+            }
+            else{
+                echo "<li style='float:right;'><a href='signup.php'>Sign Up</a></li>";
+                echo "<li style='float:right;'><a href='signin.php'>Sign In</a></li>";
+            }
+
+        ?>
     </ul>
     <!--End of Nav Bar Section-->
 
     <!--Start of Content Section-->
     <section class="content">
-        <div class="heading">Designing</div>
+        <div class="heading">Internet <span class="thin">of</span> Things</div>
         <div class="heading2">Project <span class="thin">List</span></div>
         <div class="project">
             <div class="project-card">
-                <span class="heading3"><a href="https://github.com/deeppanchani/pi_community">Project Name</a></span>
-                <div class="heading4">UI Designing</div>
+                <a href="https://github.com/deeppanchani/pi_community"><span class="heading3">Project Name</span></a>
+                <div class="heading4">IoT, Raspberry pi</div>
                 <p>Quisque vel quam mi. Etiam euismod, orci sit amet blandit posuere, nunc urna porttitor lorem, ut faucibus quam dui viverra libero. Etiam nec auctor dui. Nullam sollicitudin lectus orci, ut gravida libero tempor in.</p>
             </div>
             <div class="project-card">
-                <span class="heading3"><a href="https://github.com/deeppanchani/pi_community">Project Name</a></span>
-                <div class="heading4">UX Designing</div>
+                <a href="https://github.com/deeppanchani/pi_community"><span class="heading3">Project Name</span></a>
+                <div class="heading4">IoT, Raspberry pi</div>
                 <p>Quisque vel quam mi. Etiam euismod, orci sit amet blandit posuere, nunc urna porttitor lorem, ut faucibus quam dui viverra libero. Etiam nec auctor dui. Nullam sollicitudin lectus orci, ut gravida libero tempor in.</p>
             </div>
             <div class="project-card">
-                <span class="heading3"><a href="https://github.com/deeppanchani/pi_community">Project Name</a></span>
-                <div class="heading4">UX Research</div>
+                <a href="https://github.com/deeppanchani/pi_community"><span class="heading3">Project Name</span></a>
+                <div class="heading4">IoT, Smart Devices</div>
+                <p>Quisque vel quam mi. Etiam euismod, orci sit amet blandit posuere, nunc urna porttitor lorem, ut faucibus quam dui viverra libero. Etiam nec auctor dui. Nullam sollicitudin lectus orci, ut gravida libero tempor in.</p>
+            </div>
+            <div class="project-card">
+                <a href="https://github.com/deeppanchani/pi_community"><span class="heading3">Project Name</span></a>
+                <div class="heading4">IoT, Automation</div>
                 <p>Quisque vel quam mi. Etiam euismod, orci sit amet blandit posuere, nunc urna porttitor lorem, ut faucibus quam dui viverra libero. Etiam nec auctor dui. Nullam sollicitudin lectus orci, ut gravida libero tempor in.</p>
             </div>
         </div>
@@ -97,7 +116,7 @@
         </div>
     </section>
     <!--End of Content Section-->
-    
+
     <!--Start of Footer Section-->
     <div class="footer">
         <div>

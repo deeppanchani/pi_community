@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,11 +30,22 @@
     <!--Start of Nav Bar Section-->
     <ul>
         <li></li>
-        <li><a href="index.html">Home</a></li>
-        <li><a class="active" href="blogs.html">Blogs</a></li>
-        <li><a href="team.html">Team</a></li>
-        <li style="float:right"></li>
-        <li style="float:right"><a href="dashboard.html">Dashboard</a></li>
+        <li><a class="active" href="index.php">Home</a></li>
+        <li><a href="blogs.php">Blogs</a></li>
+        <li><a href="team.php">Team</a></li>
+        <li style="float:right;"></li>
+        <?php
+
+            if(isset($_SESSION["email"])){
+                echo "<li style='float:right;'><a href='./includes/logout.inc.php'> Logout </a></li>";
+                echo "<li style='float:right;'><a href='dashboard.php'>".$_SESSION["fname"]." ".$_SESSION["lname"]."</a></li>";
+            }
+            else{
+                echo "<li style='float:right;'><a href='signup.php'>Sign Up</a></li>";
+                echo "<li style='float:right;'><a href='signin.php'>Sign In</a></li>";
+            }
+
+        ?>
     </ul>
     <!--End of Nav Bar Section-->
 
@@ -63,7 +77,7 @@
             <div class="blog-h1">Blog <span class="thin">Recommendation</span></div>
             <div class="blog-recommendation">
                 <div class="blog-small">
-                    <div class="blog-h2"><a href="blogpost_0.html">How To Center A Div?</a></div>
+                    <div class="blog-h2"><a href="blogpost_0.php">How To Center A Div?</a></div>
                     <div class="blog-info">
                         <span>1 January, 2021</span><br>
                         <span>Web Development, HTML, CSS</span>
@@ -74,7 +88,7 @@
                     </div>
                 </div>
                 <div class="blog-small">
-                    <div class="blog-h2"><a href="blogpost_0.html">How To Center A Div?</a></div>
+                    <div class="blog-h2"><a href="blogpost_0.php">How To Center A Div?</a></div>
                     <div class="blog-info">
                         <span>1 January, 2021</span><br>
                         <span>Web Development, HTML, CSS</span>
@@ -85,7 +99,7 @@
                     </div>
                 </div>
                 <div class="blog-small">
-                    <div class="blog-h2"><a href="blogpost_0.html">How To Center A Div?</a></div>
+                    <div class="blog-h2"><a href="blogpost_0.php">How To Center A Div?</a></div>
                     <div class="blog-info">
                         <span>1 January, 2021</span><br>
                         <span>Web Development, HTML, CSS</span>
