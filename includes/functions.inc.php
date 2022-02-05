@@ -74,6 +74,10 @@
             $_SESSION["email"]=$userexists["userEmail"];
             $_SESSION["fname"]=$userexists["fname"];
             $_SESSION["lname"]=$userexists["lname"];
+            $_SESSION["bio"]=$userexists["bio"];
+            $_SESSION["github"]=$userexists["userGithub"];
+            $_SESSION["linkedin"]=$userexists["UserLinkedin"];
+            $_SESSION["pimg"]=$userexists["userProfile"];
             header("location: ../index.php");
             exit();
         }

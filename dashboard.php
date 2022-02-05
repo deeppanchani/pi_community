@@ -3,27 +3,13 @@
 ?>
 <?php
 
-if (isset($_POST["submit"])) {
-    print_r($_POST);
-    $fname = $_POST["fname"];
-    $lname = $_POST["lname"];
-    $bio = $_POST["bio"];
-    $college = $_POST["college"];
-    $github = $_POST["github"];
-    $linkedin = $_POST["linkedin"];
-    $img = $_POST["img"];
-}else {
-    $fname = "John";
-    $lname = "Doe";
-    $bio = "Web developer";
-    $college = "IIIT nagpur";
-    $github = "#";
-    $linkedin = "#";
-    $img = "./images/profile_img.svg";
-}
-
-
-
+    if(isset($_SESSION["email"])){
+        
+    }
+    else {
+        echo '<script>alert("To access Dashboard you need to Sign In first")</script>';
+        header("location: ./index.php");
+    }
 ?>
 
 <!DOCTYPE html>
@@ -77,18 +63,23 @@ if (isset($_POST["submit"])) {
     <!-- Start of the content section -->
     <div class="container_dashboard">
         <div class="biodata">
-            <img src="./images/profile_img.svg" alt="Profile Pic" id="profile_pic">
-            <!-- <img src="<?php echo $img; ?>" alt="Profile Pic" id="profile_pic"> -->
-   
+            <?php
+                if($_SESSION["pimg"]==0){
+                    echo "<img src='./images/profile_img.svg' alt='Profile Pic' id='profile_pic'>";
+                }
+                else{
+                    echo "<img src='./uploads/".$_SESSION["email"].".jpg' alt='Profile Pic' id='profile_pic'>";
+                }
+            ?>
+            
             <div id="biodata">
-                <h3><?php echo $fname. " ". $lname; ?></h3>  
-                <?php echo $bio; ?> <br>
-                Student at <?php echo $college; ?>
+                <h3><?php echo $_SESSION["fname"]. " ".$_SESSION["lname"]; ?></h3>  
+                <?php echo $_SESSION["bio"]; ?> <br>
             </div>
 
             <div id="social_media">
-                <a href="<?php echo $github; ?>"><img src="images/github.svg" alt="GitHub Logo" width="30px"></a>
-                <a href="<?php echo $linkedin ?>"><img src="images/linkedin.svg" alt="LinkedIn Logo" width="30px"></a>
+                <a href="<?php echo $_SESSION["github"]; ?>"><img src="images/github.svg" alt="GitHub Logo" width="30px"></a>
+                <a href="<?php echo $_SESSION["linkedin"] ?>"><img src="images/linkedin.svg" alt="LinkedIn Logo" width="30px"></a>
             </div>
         </div>
         <div class="figures">

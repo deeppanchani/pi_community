@@ -51,16 +51,13 @@
 
     <!-- Start of the content section -->
     <div class="container_dashboard">
-        <form action="./dashboard.php" method="POST">
+        <form action="./includes/editprofile.inc.php" method="POST">
             
             <div class="Edit_container">
-                <div class="Edit_form">                      
-                        <span class="form_lables">First Name</span>  <input name="fname" class="Square" type="text" required>
-                        <span class="form_lables">Last Name</span>  <input name="lname" class="Square" type="text" required>
-                        <span class="form_lables">Speciality</span>  <input name="bio" type="text" class="Square" required>
-                        <span class="form_lables">College</span>  <input name="college" type="text" class="Square" required>
-                        <span class="form_lables">Github Id</span>  <input name="github" type="url" class="Square" required>
-                        <span class="form_lables">Linkedin Id</span>  <input name="linkedin" type="url" class="Square" required>                     
+                <div class="Edit_form">
+                        <span class="form_lables">Bio</span>  <input name="bio" type="text" class="Square">
+                        <span class="form_lables">Github Id</span>  <input name="github" type="url" class="Square">
+                        <span class="form_lables">Linkedin Id</span>  <input name="linkedin" type="url" class="Square">                     
                         <span class="form_lables">Upload Your Image</span> <input class="btn-black" type="file" id="img" name="img" accept="image/*">
                 </div>
             </div>
