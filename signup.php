@@ -44,9 +44,9 @@
                <span class="form_lables" >Password</span>  <input type="password" name="pwd" required>
                 <br>
                <input type="button" value="Cancel" name="cancel"class="cancel_button">
-               <button type="submit" value="Signup" name="signup" class="Sign_button"> Sign Up </button>
+               <input type="submit" value="Signup" name="signup" class="Sign_button">
             </form>
-            <div class="form_footer">Already a member? <a href="./signin.html">Sign In</a></div>
+            <div class="form_footer">Already a member? <a href="./signin.php">Sign In</a></div>
         </div>
 
 
