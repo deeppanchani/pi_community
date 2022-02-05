@@ -1,7 +1,14 @@
 <?php
     session_start();
 ?>
-
+<?php
+    if(isset($_SESSION["email"])){
+    
+    }
+    else {
+        header("location: ./index.php")
+    }
+?>
 
 <!DOCTYPE html>
 <html lang="en">
